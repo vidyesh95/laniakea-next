@@ -1,7 +1,10 @@
+import NotificationBanner from "./ui/components/core/notification-banner"
+
 export default function Home() {
   return (
     <>
       <header>
+        <NotificationBanner />
         <nav>
           <a href="#">Laniakea</a>
           <a href="/themed-jewelery">Themed Jewelry</a>
