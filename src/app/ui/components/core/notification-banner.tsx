@@ -1,15 +1,15 @@
-// import { useState } from "react";
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function NotificationBanner() {
-  // const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(false);
 
-  // if (isCollapsed) {
-  //   return (
-  //    null
-  //   )
-  // }
+  if (isCollapsed) {
+    return null;
+  }
 
   return (
     // collapsing_banner
@@ -33,7 +33,8 @@ export default function NotificationBanner() {
         {/* close_bannerbutton */}
         <button
           type="button"
-          className="absolute top-1/2 end-4 p-2 -translate-y-1/2 hover:cursor-pointer "
+          className="absolute top-1/2 end-4 p-2 -translate-y-1/2 hover:cursor-pointer"
+          onClick={() => setIsCollapsed(true)}
         >
           <Image
             src="/svg/core/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
