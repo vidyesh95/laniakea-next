@@ -7,21 +7,21 @@ export default function NotificationBanner() {
 
   // if (isCollapsed) {
   //   return (
-  //    null 
-  //   ) 
+  //    null
+  //   )
   // }
 
   return (
     // collapsing_banner
     <section className="w-full bg-white flex justify-center">
       {/* banner_container */}
-      <div className="w-[1024px] flex ps-6 pe-4 gap-2 bg-green-500">
+      <div className="w-[1024px] flex justify-center ps-6 pe-18 relative">
         {/* banner_ad */}
         <Link
           href="https://play.google.com/"
-          className="grow flex flex-wrap gap-1 justify-center items-center bg-amber-500"
+          className="min-h-[40px] flex gap-1 items-center"
         >
-          <p className="text-sm">
+          <p className="text-sm py-1">
             <span className="text-black">
               Download the Laniakea Store app available both on android and
               ios.&nbsp;
@@ -31,7 +31,10 @@ export default function NotificationBanner() {
           </p>
         </Link>
         {/* close_bannerbutton */}
-        <button type="button" className="p-2 grow-0 hover:cursor-pointer">
+        <button
+          type="button"
+          className="absolute top-1/2 end-4 p-2 -translate-y-1/2 hover:cursor-pointer "
+        >
           <Image
             src="/svg/core/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
             width={24}
