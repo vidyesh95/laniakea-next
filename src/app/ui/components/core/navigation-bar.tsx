@@ -4,8 +4,63 @@ import Link from "next/link";
 export default function NavigationBar() {
   return (
     <nav className="w-full flex justify-center bg-[#E0BFB8]">
-      {/* navigation_container */}
-      <div className="w-[1024px] px-6 py-2 flex items-center justify-between">
+      {/* navigation_container mobile */}
+      <div className="lg:hidden w-full py-2 flex flex-row">
+        {/* menu */}
+        <Link
+          href="#"
+          className="w-[56px] h-[56px] flex justify-center items-center"
+        >
+          <Image
+            src="/svg/core/menu_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"
+            width={24}
+            height={24}
+            alt="Menu"
+          />
+        </Link>
+
+        {/* logo */}
+        <Link
+          href="#"
+          className="grow h-[56px] flex justify-start items-center"
+        >
+          <Image
+            src="/svg/core/logo.svg"
+            width={133}
+            height={44}
+            alt="Laniakea"
+          />
+        </Link>
+
+        {/* cart */}
+        <Link
+          href="#"
+          className="w-[56px] h-[56px] flex justify-center items-center"
+        >
+          <Image
+            src="/svg/core/local_mall_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"
+            width={24}
+            height={24}
+            alt="Menu"
+          />
+        </Link>
+
+        {/* more */}
+        <Link
+          href="#"
+          className="w-[56px] h-[56px] flex justify-center items-center"
+        >
+          <Image
+            src="/svg/core/more_vert_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"
+            width={24}
+            height={24}
+            alt="Menu"
+          />
+        </Link>
+      </div>
+
+      {/* navigation_container desktop*/}
+      <div className="max-lg:hidden w-[1024px] px-6 py-2 flex items-center justify-between">
         {/* logo */}
         <Link
           href="#"
